@@ -6,6 +6,126 @@
     <title>Document</title>
 </head>
 <body>
-    
+     font-family: "Segoe UI", sans-serif;
+      background: #f7fdfc;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card h2 {
+      margin: 0 0 10px;
+      color: #333;
+    }
+
+    .card p {
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #666;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>5 Frutas e Seus Benefícios 🍎</h1>
+    <p>Saúde, sabor e dicas de preparo!</p>
+  </header>
+
+  <div class="container">
+    <!-- Banana -->
+    <div class="card">
+      <img src="https://source.unsplash.com/featured/?banana" alt="Banana">
+      <div class="card-content">
+        <h2>Banana</h2>
+        <p><strong>Boa para:</strong> Energia rápida, rica em potássio.</p>
+        <p><strong>Como usar:</strong> Pura, em vitaminas ou panquecas.</p>
+      </div>
+    </div>
+
+    <!-- Maçã -->
+    <div class="card">
+      <img src="https://source.unsplash.com/featured/?apple" alt="Maçã">
+      <div class="card-content">
+        <h2>Maçã</h2>
+        <p><strong>Boa para:</strong> Digestão, controle do colesterol.</p>
+        <p><strong>Como usar:</strong> In natura, assada ou em saladas.</p>
+      </div>
+    </div>
+
+    <!-- Laranja -->
+    <div class="card">
+      <img src="https://source.unsplash.com/featured/?orange" alt="Laranja">
+      <div class="card-content">
+        <h2>Laranja</h2>
+        <p><strong>Boa para:</strong> Imunidade, vitamina C.</p>
+        <p><strong>Como usar:</strong> Suco, saladas ou sobremesas.</p>
+      </div>
+    </div>
+
+    <!-- Abacate -->
+    <div class="card">
+      <img src="https://source.unsplash.com/featured/?avocado" alt="Abacate">
+      <div class="card-content">
+        <h2>Abacate</h2>
+        <p><strong>Boa para:</strong> Coração, gorduras boas.</p>
+        <p><strong>Como usar:</strong> Guacamole, vitaminas ou puro com limão.</p>
+      </div>
+    </div>
+
+    <!-- Morango -->
+    <div class="card">
+      <img src="https://source.unsplash.com/featured/?strawberry" alt="Morango">
+      <div class="card-content">
+        <h2>Morango</h2>
+        <p><strong>Boa para:</strong> Antioxidantes e pele saudável.</p>
+        <p><strong>Como usar:</strong> Em iogurtes, sobremesas ou sucos.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>🌱 Site criado com HTML e CSS - por você!</p>
+  </footer>
 </body>
 </html>
